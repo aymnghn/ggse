@@ -22,8 +22,8 @@ export default async function handler(req, res) {
         }
       ],
       application_context: {
-        return_url: "https://ggse.vercel.app/api/order-status",
-        cancel_url: "https://ggse.vercel.app/cancel"
+        return_url: "https://ggsel.vercel.app/api/order-status",
+        cancel_url: "https://ggsel.vercel.app/cancel"
       }
     })
   });
@@ -31,4 +31,5 @@ export default async function handler(req, res) {
   const data = await response.json();
   res.status(200).json(data);
 }
+
 
